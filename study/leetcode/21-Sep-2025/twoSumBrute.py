@@ -1,8 +1,4 @@
-print("hi")
-
-print(1)
-aaa=2
-print(aaa)
+from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -13,3 +9,15 @@ class Solution:
                 if nums[i] + nums[j] == target:
 
                     return [i, j]
+                
+
+solver = Solution()
+
+
+input_nums = [2, 7, 11, 15]
+input_target = 9
+
+result = solver.twoSum(input_nums, input_target)
+
+
+print(result)
